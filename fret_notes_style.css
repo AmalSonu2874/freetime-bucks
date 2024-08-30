@@ -1,0 +1,166 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+  --bg-color:#1f242d;
+  --second-bg-color:#1f242d;
+  --text-color:#f91e1e;
+  --main-color:#f91e1e;
+}
+
+html {
+  font-size:62.5%;
+  overflow-x :hidden;
+}
+
+body {
+  background:#020202;
+  color:#eda423;
+  
+}
+
+section {
+  min-height: 100vh;
+  padding:10rem 9% 2rem;
+}
+
+.header {
+  position:fixed;
+  width:100%;
+  padding: 2rem 9%;
+  background:#0A1828;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  z-index: 100;
+}
+
+
+.logo {
+  font-size:2.7rem;
+  color:#eda423;
+  font-weight:600;
+  cursor:default;
+}
+
+#menu-icon {
+  font-size: 3,6rem;
+  color: #f91e1e;
+  display: none;
+}
+
+.dropbtn {
+  background-color:#eda423;
+  color:#020202;
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: bold;
+  align-items: right;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color:#eda423;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:#eda423;
+}
+
+.ai-content h3 {
+  font-size: 2.6rem ;
+  margin: 1rem;
+  color:#eda423;
+  text-align: center;
+}
+
+.ai-content h4 {
+  font-size: 1.8rem ;
+  margin: 0.5rem;
+  color:white;
+}
+
+.ai-content li {
+  color:WHITE;
+  margin: 0.2rem;
+  font-size:1.6rem ;
+}
+
+.ai-content h5 {
+  font-size: 1.4rem ;
+  margin: 0.5rem;
+  color:white;
+}
+
+.logo_design img {
+  width:15vw;
+  align-items: center;
+  justify-content: center;
+  display: inline;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+}
+.ai img {
+  width:50vw;
+  align-items: center;
+  justify-content: center;
+  display: inline;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+}
+
+.code{
+  color:#f91e1e;
+  font-family:cursive;
+}
+
+.code h5 {
+  color:white;
+  font-family:cursive;
+}
+
+.code li {
+  color:white;
+  font-family:cursive;
+}
