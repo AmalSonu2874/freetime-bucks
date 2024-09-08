@@ -2,47 +2,49 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio.</title>
-    <!--boxicon-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!--custom css style-->
-    <link rel="stylesheet" href="fret_notes_style.css">
-    <!--google font-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FRET NOTES</title>
+  <!--boxicon-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!--custom css style-->
+  <link rel="stylesheet" href="fret_notes_style.css">
+  <!--custom javascript file.-->
+  <script src="fret_notes_java.js"></script>
+  <!--google font-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 
 <body>
 
-    <!--header design-->
-    <header class="header">
-        <a class="logo" href="index.html">FRET NOTES</a>
-        <i class='bx bx-menu-alt-right' id="menu-icon"></i>
-        <!--Chapters-->
-        <div class="dropdown">
-          <button class="dropbtn">MODULES <i class='bx bx-down-arrow-circle'></i></button>
-          <div class="dropdown-content">
-            <a href="#ai">AI</a>
-            <a href="#c">C</a>
-            <a href="#r">R</a>
-          </div>
-        </div>
-    </header>
-
-    <!--INTRODUCTION TO ARTIFICIAL INTELLIGENCE-->
-    <br>
-    <section class="ai-content" id="ai">
-      <div class="dropdown">
-        <button class="dropbtn">SELECT YOUR TOPICS FROM HERE :  <i class='bx bx-down-arrow-circle'></i></button>
-        <div class="dropdown-content">
-          <a href="#basics">BASICS OF ARTIFICIAL INTELLIGENCE</a>
-          <a href="#bfs">BFS</a>
-          <a href="#r">R</a>
-        </div>
+  <!--header design-->
+  <header class="header">
+    <a class="logo" href="index.html">FRET NOTES</a>
+    <i class='bx bx-menu-alt-right' id="menu-icon"></i>
+    <!--Chapters-->
+    <div class="dropdown">
+      <button class="dropbtn">MODULES <i class='bx bx-down-arrow-circle'></i></button>
+      <div class="dropdown-content">
+        <a href="#ai">AI</a>
+        <a href="#indianvoices">Indian Voices</a>
+        <a href="#c">C Program</a>
       </div>
-      <br>
+    </div>
+  </header>
+
+  <!--INTRODUCTION TO ARTIFICIAL INTELLIGENCE-->
+  <section class="ai-content" id="ai">
+    <div class="dropdown">
+      <h3 style="color: white; text-align:center;">1. ARTIFICIAL INTELLIGENCE </h3> <br>
+      <button class="dropbtn">SELECT YOUR TOPICS FROM HERE : <i class='bx bx-down-arrow-circle'></i></button>
+      <div class="dropdown-content">
+        <a href="#basics">BASICS OF ARTIFICIAL INTELLIGENCE</a>
+        <a href="#search">SEARCH ALGORITHM</a>
+      </div>
+    </div>
+    <br>
     <div id="basics">
+      <!--BASICS OF AI-->
       <h3> BASICS OF ARTIFICIAL INTELLIGENCE </h3>
       <br>
       <br>
@@ -59,18 +61,27 @@
       <h4>CORE CONCEPTS OF AI</h4>
       <br>
       <li>MACHINE LEARNING :- Algorithms learn from data without being explicitly programmed .</li>
-      <li>NEURAL NETWORK :- These are networks of algorithms that mimics the way neurons interact , allowing computers to recognize patterns and sole common problems in AI .</li>
-      <li>DEEP LEARNING :- A subset of ML . It uses complex neural networks with many layers to analyse various factors of data .</li>
-      <li>NATURAL LANGUAGE PROCESSING : It involves programming computers to process and analyse large amount of natural language data , enabling interactions between computers and humans using natural language</li>
-      <li>ROBOTICS : While often associated with AI robotics , merges , AI Concepts with physical components to create machines capable of performing a variety of tasks , from assembly lines to complex surgeries .</li>
-      <li>COGNITIVE COMPUTING : This AI approach mimics human brain processes to solve complex problems , Often using pattern recognition , NSP and data mining .</li>
-      <li>EXPERT SYSTEM : These are AI Systems that emulate the decision making ability of a human expert applying reasoning capabilities to reach conclusion .</li>
+      <li>NEURAL NETWORK :- These are networks of algorithms that mimics the way neurons interact , allowing computers
+        to recognize patterns and sole common problems in AI .</li>
+      <li>DEEP LEARNING :- A subset of ML . It uses complex neural networks with many layers to analyse various factors
+        of data .</li>
+      <li>NATURAL LANGUAGE PROCESSING : It involves programming computers to process and analyse large amount of natural
+        language data , enabling interactions between computers and humans using natural language</li>
+      <li>ROBOTICS : While often associated with AI robotics , merges , AI Concepts with physical components to create
+        machines capable of performing a variety of tasks , from assembly lines to complex surgeries .</li>
+      <li>COGNITIVE COMPUTING : This AI approach mimics human brain processes to solve complex problems , Often using
+        pattern recognition , NSP and data mining .</li>
+      <li>EXPERT SYSTEM : These are AI Systems that emulate the decision making ability of a human expert applying
+        reasoning capabilities to reach conclusion .</li>
       <br>
       <h4>TYPES OF AI SYSTEM</h4>
       <br>
-      <li>NARROW AI : It is also known as ANI (Artificial Narrow AI) , refers to AI systems designed to handle a specific task or a limited range of task</li>
-      <li>GENERAL AI : Refers to AI system that posses the ability to understand , learn and apply intelligence across a broad range of tasks . memoring human cognitive abilities</li>
-      <li>SUPER INTELLIGENT AI : Represent an AI that not only mimics but significiantly surpasses human untelligence across all fielfds of science , general wisdom , social skills and more .... </li>
+      <li>NARROW AI : It is also known as ANI (Artificial Narrow AI) , refers to AI systems designed to handle a
+        specific task or a limited range of task</li>
+      <li>GENERAL AI : Refers to AI system that posses the ability to understand , learn and apply intelligence across a
+        broad range of tasks . memoring human cognitive abilities</li>
+      <li>SUPER INTELLIGENT AI : Represent an AI that not only mimics but significiantly surpasses human untelligence
+        across all fielfds of science , general wisdom , social skills and more .... </li>
       <br>
       <h4>TYPES OF AI SYSTEM</h4>
       <br>
@@ -86,51 +97,269 @@
       <li>Robotics</li>
       <li>Agriculture</li>
       <li>E-Commerce</li>
-
+      <br>
+      <h4>MERITS OF AI</h4>
+      <br>
+      <li>HIGH ACCURACY WITH LESS ERRORS : AI machines or system are prone to less errors and high accuracy as it takes
+        decisions as per pre-experience or information</li><br>
+      <h4>NOTE : Pre-experience means computer will define features.</h4><br>
+      <li>HIGH SPEED : AI systems can be very high speed and has fast decision making skills.<br>This is because mostly
+        human intelligence are sequential but AI has parellel intelligence.</li>
+      <li>HIGH RELIABILITY : AI machines are reliable and can perform the same action multiple times with high accuracy
+        . </li>
+      <li>USEFUL FOR RISKY AREAS : It can replace human in several risky situations</li>
+      <li>DIGITAL ASSISTANCE : </li>
+      <li>USEFUL AS A PUBLIC UTILITY : Replace manual facial matches can communicate with human languages to Machines
+        using NLP's .</li>
+      <li>ENHANCE SECURITY : It can detect and respond to cyber threats and helps to protect data and system . </li>
+      <li>AID IN RESEARCH : AI is very helpful in the research field as it assists researches by processing and
+        analysing large datasets.</li>
+      <li>Some examples of ai in cyber security : * Bio Metrix. , * Forensic fingerprint detection.</li>
+      <br>
+      <h4>DE-MERITS OF AI </h4>
+      <br>
+      <li>High cost</li>
+      <li>Can't think out of the box</li>
+      <li>No feelings and emotions.</li>
+      <li>Increase dependency or machines.</li>
+      <br>
+      <h4>CHALLENGES OF AI</h4>
+      <br>
+      <li>CHALLENGES AND AI - Government uses AI to keep an eye on people.</li>
+      <li>BIAS IN AI - AI can be sometimes bit unfair , in faxe recognisation especially .</li>
+      <li>AI and Social Media - AI sometimes shows things that aren't true or sometimes fake.</li>
+      <li>LEGAL AND REGULATORY CHALLENGES - The rapid evolution of AI otpaced the developement of rules and regulations.
+      </li>
     </div>
-  </section>
-  
-    <!--BASICS OF C PROGRAMMING-->
-    <section class="ai-content" id="c">
-      <div>
-        <h3>BASICS OF C- PROGRAMMING </h3>
-        <br>
-        <h5>C is a platform Independent language.</h5>
-        <h5>C is a high level programming language.</h5>
-        <h5>C is more interactive to hard ware </h5>
-        <br>
-        <h5>TYPES OF LANGUAGES</h5>
-        <br>
-        <h5> - Machine Language </h5>
-        <h5> - Assembly Language </h5>
-        <h5> - High Level Language </h5>
-        <br>
-        <h5>C was developed in 1972 at Bell Labs by Dennis Ritche </h5>
-        <br>
-        <h5>FLOW OF CODE : With the help of a compiler a c program is converted to Machine Code (cgg) and this machine code is sent to "Hardware".</h5>
-        <li>ABSENCE OF ELECTRICITY : 0 </li>
-        <li>PRESENCE OF ELECTRICITY : 1</li>
-        <br>
-        <div class="code">
-        <h5>#sample_code 1 </h5>
-        <ul>
-          # include stdio.h <br>
-          int main () <br>
-          { <br>
-            printf ("HELLO WORLD"); <br>
-            return 0; <br>
-          }
-        </ul>
-        <br>
-        <li>printf is a library function.</li>
-        <li>; for saving a code.</li>
-        <li>{ } for looping a specific code.</li>
-        <li>"stdio.h" is a standar library . it is a header file that decides how printf should behave.</li>
-        <li>main() is a user defined function .</li>
-        <li>return 0 is used for succesful completion of a code . </li>
-        <li>/n used of newline.</li>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="search">
+      <!--SEARCH ALGORITHMS-->
+      <h3 id="search">SEARCH ALGORITHMS</h3>
+      <br>
+      <br>
+      <br>
+      <h4>SEARCHING : It is a step-by-step procedure to solve a search problem in agiven search space factors of search
+        problems are :</h4>
+      <li>SEARCH SPACE : It represents all the possible path which system may have.</li>
+      <li>START STATE : It is a state from where agent begins the search.</li>
+      <li>GOAL TEST : It is a function that observes the current state and return whether the goal state is achieved or
+        not . </li>
+      <br>
+      <h4>SOME BASIC KEYWORDS : </h4>
+      <lI>SEARCH TREE : Tree representation of search problems is called search tree . Thr root of search tree . The
+        root of search tree is the root node which corresponding to the initial state. </lI>
+      <li>ACTIONS : It gives the description of all the available actions to the agent.</li>
+      <li>PATH COST : It is a function that assign numeric cost to each path.</li>
+      <li>TRANSITION MODEL : A description of what each action do , can be represented to transiton model.</li>
+      <li>SOLUTION : It is an action sequence which leads fro the srart node to the goal node.</li>
+      <li>OPTIMAL SOLUTION : If a solution has the lowest cost among all solutions.</li>
+      <br>
+      <h4>EVALUATION METRICS / PROPERTIES OF SEARCH.</h4>
+      <li>Completeness - A search algorithms is said to be complete of it guarantees to return a solution if at least
+        any solution exists for any random input.</li>
+      <li>Optimality - If a solution found for an algorithms is guaranteed to be the best solution (lowest path cost)
+        among all other solutions then such as solution for is said to be optimal solution.</li>
+      <li>Time Complexity - Time complexity is a measure of time for an algorithms to complete its task.</li>
+      <li>Space Complexity - Maximum storage soace is required at any point during the search as complexity of problem .
+      </li>
+      <br>
+      <div class="dropdown">
+        <button class="dropbtn" style="background: #f91e1e;">TYPES OF SEARCH ALGORITHMS <button>
+        <div class="dropdown-content">
+          <a href="#bfs">1. BREADTH FIRST SEARCH.</a>
+          <a href="#ucs">2. UNIFORM COST SEARCH. </a>
+          <a href="#dfs">3. DEPTH FIRST SEARCH. </a>
+          <a href="#dls">4. DEPTH LIMIT SEARCH. </a>
+          <a href="#ifs">5. ITERATIVE DEEPENING FIRST SEARCH.</a>
         </div>
       </div>
-    </section>
+      <br>
+      <br>
+      <br>
+      <div id="bfs">
+        <h4>It is a type of Uninformed / Blind . </h4>
+        <br>
+        <h4 style="font-size: 2rem; color: #eda423;">1. BREADTH FIRST SEARCH.</h4>
+        <br>
+        <h4>Breadth first search is the most common search strategy for traversing a tree or a graph .This algorithm
+          searches breadth wise in a tree or graph , So it is called breadth first search.</h4>
+        <li>BFS algorithm starts searching from the root node of the tree and expands all success or node at the current
+          level before moving to nodes of the next level.</li>
+        <li>The breadth -first search algorithm is an example of a general - graph search algorithm </li>
+        <li>Breadth-first search implemented using FIFO queue data structure. </li>
+        <br>
+        <h4 style="color: #f91e1e;">PROCESS FLOW OF BFS : <a
+            href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.guru99.com%2Fbreadth-first-search-bfs-graph-example.html&psig=AOvVaw2jDsQeallemnsyvtMj0q9v&ust=1725264687250000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIjEx_iloYgDFQAAAAAdAAAAABAJ"
+            style="color:#eda423; font-size: large;"><i class='bx bx-images' style="font-size: x-large;"></i></a></h4>
+        <br>
+        <h4>ADVANTAGES :</h4>
+        <lI>BFS will provide a solution if any solution exists</lI>
+        <li>If there are more than one solutions for a given problem , then bfs wil provide the minimal solution which
+          requires the least numbe rof steps.</li>
+        <li>It also helps in finding the shortest path in goal state , since it needs all nodes at the same hierarchical
+          level before making a move to nodes at lower levels.</li>
+        <li>It is also very easy to comprehended with the help of this we can assign the higher rank among path types.
+        </li>
+        <br>
+        <h4>DISADVANTAGES :</h4>
+        <li>It requires lots of memory</li>
+        <li>It requires lots of time</li>
+        <li></li>
+        <h4>Time Complexity :- </h4>
+        <br>
+        <h4>Space Complexity :- </h4>
+      </div>
+      <div id="dfs">
+        <h4>It is a type of Uninformed / Blind . </h4>
+        <br>
+        <h4 style="font-size: 2rem; color: #eda423;">2.DEPTH FIRST SEARCH.</h4>
+        <br>
+        <h4> Depth first search is a recursive algorithm. for traversing a tree or graph data Structure </h5> <br>
+        <li> It is called the depth-first search because it Starts from the root node and follows each path to its
+          greatest depth node before. moving to the next path. </li>
+        <li> DFS uses a stack data structure for its implementation</li>
+        <li>The process of the DFS agoristim is similar to the BFs algorithm. </li> <br>
+        <h5>Note: Back tracking is an algorithm technique it for finding all possible solutions using recursion
+        </h4><br>
+        <h4>ADVANTAGES : </h4>
+        <li> DFS requires less memory as it only needs to store a stack of the nodes on the path from root node to the
+          current mode. </li>
+        <li> It takes less time to reach to the goal mode than BFS algorithm (if it traverses in the right path) </li>
+        <li> With the help of this we can stordes the route Which is being tracked in memory to save time as it only
+          needs to keep one at a particular time. </li><br>
+          <h4>DIS ADVANTAGES : </h4>
+        <li>There is the possibility that Keep re-occuring, and there is no gurantee of finding the solution. </li>
+        <li> DFS algorithm goes for deep down searching and sometime it may go to the infinite loop. </li>
+        <li> The depth first search (DFS) algorithm does not always find the shortest path to a solution </li>
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+  <!--INDIAN VOICES IN ENGLISH.-->
+  <section class="ai-content" id="indianvoices">
+    <div class="dropdown">
+      <h3 style="color: white; text-align:center;">2. INDIAN VOICES IN ENGLISH </h3> <br>
+      <button class="dropbtn">SELECT YOUR TOPICS FROM HERE : <i class='bx bx-down-arrow-circle'></i></button>
+      <div class="dropdown-content">
+        <a href="#shashi">A TALK BY SHASHI TAROOR</a>
+        <a href="#experiments">SEARCH FOR INDIA</a>
+      </div>
+    </div>
+    <br>
+    <div id="shashi">
+      <h3>A TALK BY SHASHI TAROOR. </h3>
+      <br>
+      <br>
+      <h4>This can give you a brief summary about the talk by shashi taroor at oxford university.</h4>
+      <br>
+      <li> 🇮🇳 Tharoor cites India’s economic decline from 23% to below 4% of global trade during British rule. </li>
+      <li> 💰 The British exploited India for resources, financing their Industrial Revolution at India’s expense. </li>
+      <li>🏭 Colonial policies dismantled India’s textile industry, leaving weavers impoverished. </li>
+      <li> 📜 Reparations principles are likened to other historical precedents, such as Germany’s reparations
+        post-WWII.</li>
+      <li>🍽️ Starvation in India, exacerbated by British policies during famines, illustrates colonial neglect. </li>
+      <li>🚂 British infrastructure was built primarily for colonial interests, not local benefits. </li>
+      <li> 🤝 The acknowledgment of historical wrongs is essential for reconciliation and reparations.</li>
+      <br> <a href="https://www.youtube.com/watch?v=f7CW7S0zxv4&t=310s" style="color: #eda423;">Click here to view the
+        video</a> <br><br>
+      <h4>Key Insights</h4><br>
+      <li> ⚖️ Colonial Economic Impact: Tharoor illustrates how British colonialism drastically reduced India’s economic
+        power, transforming it from a leading exporter to an impoverished nation. This underscores the long-lasting
+        effects of exploitation. </li>
+      <li> 🏭 Deindustrialization: The dismantling of India’s textile industry highlights how colonial policies were
+        designed to benefit Britain rather than the local economy, leading to widespread poverty among skilled artisans.
+      </li>
+      <li> 📉 Moral Responsibility: Tharoor emphasizes that acknowledging historical injustices is a moral obligation,
+        advocating for reparations not just as financial compensation but as recognition of past wrongs. </li>
+      <li> 🌍 Global Context: He draws parallels with other nations that have received reparations, reinforcing that
+        such actions are not unprecedented and can promote healing and accountability. </li>
+      <li> 🥴 Human Cost of Colonialism: The reference to famines and starvation illustrates the human suffering caused
+        by colonial policies, challenging the narrative of benevolent governance. </li>
+      <li> 🚂 Infrastructure Misuse: The argument that railways were built for British benefit rather than Indian needs
+        reveals the exploitative nature of colonial investments, questioning the legacy often celebrated by former
+        colonizers. </li>
+      <li> 💔 Long-term Consequences: Tharoor’s insights reflect on how colonialism has shaped contemporary issues in
+        post-colonial societies, suggesting that reparations could aid in addressing these deep-rooted challenges. </li>
+    </div>
+  </section>
+
+
+  
+  <!--BASIC OF C PROGRAMMING-->
+  <section class="ai-content" id="c">
+    <div class="dropdown">
+      <h3 style="color: white; text-align:center;">3. BASICS OF C PROGRAMMING </h3> <br>
+
+      <button class="dropbtn">SELECT YOUR TOPICS FROM HERE : <i class='bx bx-down-arrow-circle'></i></button>
+      <div class="dropdown-content">
+        <a href="#intro">AN INTRODUCTION TO C PROGRAM</a>
+        <a href="#experiments">EXPERIMENTS</a>
+      </div>
+    </div>
+    <br>
+    <div id="intro">
+      <h3>INTRODUCTION TO C PROGRAMMING </h3>
+      <br>
+      <br>
+      <h4>C is a platform independent langauge.</h4> <br>
+      <h4>TYPES OF LANGUAGES</h4>
+      <li>MACHINE LANGUAGE :  Example - Binary Format.</li>
+      <li>ASSEMBLY LANGUAGE : Example - MASM</li>
+      <li>HIGH LEVEL LANGUAGE : Example - C</li>
+      <br>
+      <h4>C is a high level programming language.</h4>
+      <h4>C is more interactive to hardware.</h4> <br>
+      <h4>A BRIEF HISTORY ON C </h4>
+      <li>C was developed in 1972 at bell labs by dennis ritche with the help of a compiler a c program is converted to machine code (an example of a compiler is : gcc) and this machine code is sent to the hardware.</li>
+      <br>
+      <div class="code">  <!--program 1 -->
+        <h4>PROGRAM NO : PRINTING "Hello World".</h4>
+        <img src="C-EXP1-2024.png">
+        <ul>"printf" is a library function</ul>
+        <ul>";" is used for saving a code</ul>
+        <ul>"{}" is used for lopping a specific code.</ul>
+        <ul>"stdio.h" is a standard library . it is a header file that decides how printf behaves.</ul>
+        <ul>"io" means input , output </ul>
+        <ul>"main()" is a user defined function</ul>
+        <ul>"return 0;" is used for successful compeletion</ul>
+        <ul>KEYWORDS in this program : int and return</ul>
+        <ul>FUNCTIONS in this program : main() and printf() </ul>
+        <ul>"\n" is used for newline.</ul>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div id="experiments">
+      <h3>EXPERIMENTS OF C </h3>
+      <div class="dropdown">
+        <button class="dropbtn">SELECT EXPERIMENTS<i class='bx bx-down-arrow-circle'></i></button>
+        <div class="dropdown-content">
+          <a href="#1">EXPERIMENT 1</a>
+          <a href="#2">EXPERIMENT 2</a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!--EXPERIMENTS-->
+      <div id="1">
+        <h4>EXPERIMENT 1 : PRINTING ONE LINE OF CODE</h4>
+        <img src="C-EXP1-2024.png">
+      </div>
+      <div id="2">
+        <h4>EXPERIMENT 2 : PRINTING MULTIPLE LINE OF CODE</h4>
+        <img src="C-EXP2-2024.png">
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
