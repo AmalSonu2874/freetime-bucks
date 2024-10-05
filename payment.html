@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>FRETIME BUCKS/payments</title>
+    <link rel="stylesheet" href="payment_style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>FRETIME BUCKS</h1>
+      <br>
+      <header>Print Out Booking Form</header>
+      <br>
+      <p style="font-family: Fredoka; color:rgb(138, 118, 3); font-size: 1.3rem; text-align: right;"> "6 Rupees per Topic . " </p>
+      <br>
+      <p>INSTRUCTIONS : Fill the form correctly and then click the submit button to submit the form and click Pay and Scan to proceed payment .
+      </p>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Please Enter  Your full name" required />
+        </div>
+
+        <div class="input-box address">
+          <label>Batch Number</label>
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Enter Your Batch Number</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <p style="font-size: small;">*Ensure you are entering the number from that you had done the Payment*</p>
+            <input type="number" placeholder="Enter phone number" required />
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>No. Of Copies</label>
+            <input type="number" placeholder="Enter the number of copies required." required />
+          </div>
+          <div class="input-box">
+            <label>Todays Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+
+        <div class="input-box address"></div>
+          <label>Subject</label>
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Enter Subject to Take Print Out.</option>
+                <option>ARTIFICIAL INTELLIGENCE</option>
+                <option>INDIAN VOICES IN ENGLISH</option>
+                <option>C PROGRAMMING</option>
+                <option>R PROGRAMMING</option>
+                <option>BUSINESS COMMUNICATION</option>
+                <option>ENVIORNMENTAL SCIENCE</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label>Topic</label>
+            <input type="text" placeholder="Enter Your Topic" required />
+          </div>
+          
+        </div>
+        <button>Submit</button>
+        <br>
+        <div>
+          <a class="pay"href="https://drive.google.com/file/d/1CW6MpzoK6HzhJqyOsIi3DQsorHmJiwiE/view?usp=sharing"><i class='bx bx-qr-scan'></i> Scan & Pay</a>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
