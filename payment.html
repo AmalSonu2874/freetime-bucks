@@ -18,25 +18,15 @@
       <br>
       <p>INSTRUCTIONS : Fill the form correctly and then click the submit button to submit the form and click Pay and Scan to proceed payment .
       </p>
-      <form id="gform" action="https://script.google.com/macros/s/AKfycbzZy775-945S46q7qJb8vjJiQ1f3c2VqiOCW2tF_vEIXti_ner-ydpwKT7byrT_aCr-aA/exec" method="POST" class="form">
+      <form  method="POST"  action="https://script.google.com/macros/s/AKfycbzZy775-945S46q7qJb8vjJiQ1f3c2VqiOCW2tF_vEIXti_ner-ydpwKT7byrT_aCr-aA/exec" id="gform" class="form">
         <div class="input-box">
           <label>Full Name</label>
-          <input type="text" placeholder="Please Enter  Your full name" required />
+          <input type="text" placeholder="Please Enter  Your full name" id="fname" name="fname" required />
         </div>
 
         <div class="input-box address">
           <label>Batch Number</label>
-          <div class="column">
-            <div class="select-box">
-              <select>
-                <option hidden>Enter Your Batch Number</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
+          <input type="text" id="batch" name="batch number" required />
           </div>
         </div>
 
@@ -45,40 +35,31 @@
           <div class="input-box">
             <label>Phone Number</label>
             <p style="font-size: small;">*Ensure you are entering the number from that you had done the Payment*</p>
-            <input type="number" placeholder="Enter phone number" required />
+            <input type="number" placeholder="Enter phone number" id="phone" name="phone number" required />
           </div>
         </div>
 
         <div class="column">
           <div class="input-box">
             <label>No. Of Copies</label>
-            <input type="number" placeholder="Enter the number of copies required." required />
+            <input type="number" placeholder="Enter the number of copies required." id="copies" name="copies" required />
           </div>
           <div class="input-box">
             <label>Todays Date</label>
-            <input type="date" placeholder="Enter birth date" required />
+            <input type="date" placeholder="Enter birth date" id="date" name="date" required />
           </div>
         </div>
 
-        <div class="input-box address"></div>
+        <div class="input-box ">
           <label>Subject</label>
-          <div class="column">
-            <div class="select-box">
-              <select>
-                <option hidden>Enter Subject to Take Print Out.</option>
-                <option>ARTIFICIAL INTELLIGENCE</option>
-                <option>INDIAN VOICES IN ENGLISH</option>
-                <option>C PROGRAMMING</option>
-                <option>R PROGRAMMING</option>
-                <option>BUSINESS COMMUNICATION</option>
-                <option>ENVIORNMENTAL SCIENCE</option>
-              </select>
-            </div>
+          <p style="font-size: x-small;">*AI / *IVIE / *EVS / *C / *R </p>
+          <input type="text"  id="Subject" name="subject" placeholder="enter subject to take print out of " required />
+
           </div>
 
           <div class="input-box">
             <label>Topic</label>
-            <input type="text" placeholder="Enter Your Topic" required />
+            <input type="text" placeholder="Enter Your Topic" id="topic" name="topic" required />
           </div>
           
         </div>
