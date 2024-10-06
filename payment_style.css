@@ -1,170 +1,74 @@
-/* Import Google font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>FRETIME BUCKS/payments</title>
+    <link rel="stylesheet" href="payment_style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>FRETIME BUCKS</h1>
+      <br>
+      <header>Print Out Booking Form</header>
+      <br>
+      <p style="font-family: Fredoka; color:rgb(138, 118, 3); font-size: 1.3rem; text-align: right;"> "6 Rupees per Topic . " </p>
+      <br>
+      <p>INSTRUCTIONS : Fill the form correctly and then click the submit button to submit the form and click Pay and Scan to proceed payment .
+      </p>
+      <form  method="POST"  action="https://script.google.com/macros/s/AKfycbzZy775-945S46q7qJb8vjJiQ1f3c2VqiOCW2tF_vEIXti_ner-ydpwKT7byrT_aCr-aA/exec" id="gform" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Please Enter  Your full name" id="fname" name="fname" required />
+        </div>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
+        <div class="input-box address">
+          <label>Batch Number</label>
+          <input type="text" id="batch" name="batch number" required />
+          </div>
+        </div>
 
-body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background:black:
-}
+        
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <p style="font-size: small;">*Ensure you are entering the number from that you had done the Payment*</p>
+            <input type="number" placeholder="Enter phone number" id="phone" name="phone number" required />
+          </div>
+        </div>
 
+        <div class="column">
+          <div class="input-box">
+            <label>No. Of Copies</label>
+            <input type="number" placeholder="Enter the number of copies required." id="copies" name="copies" required />
+          </div>
+          <div class="input-box">
+            <label>Todays Date</label>
+            <input type="date" placeholder="Enter birth date" id="date" name="date" required />
+          </div>
+        </div>
 
+        <div class="input-box ">
+          <label>Subject</label>
+          <p style="font-size: x-small;">*AI / *IVIE / *EVS / *C / *R </p>
+          <input type="text"  id="Subject" name="subject" placeholder="enter subject to take print out of " required />
 
-.container {
-    position: relative;
-    max-width: 700px;
-    width: 100%;
-    background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
+          </div>
 
-.container header {
-    font-size: 1.5rem;
-    color: #333;
-    font-weight: 500;
-    text-align: center;
-}
-
-.container .h1{
-    font-size: 1.5rem;
-    color:grey;
-    text-align: left;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.container .form {
-    margin-top: 30px;
-}
-
-.form .input-box {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.input-box label {
-    color: #333;
-}
-
-.form :where(.input-box input, .select-box) {
-    position: relative;
-    height: 50px;
-    width: 100%;
-    outline: none;
-    font-size: 1rem;
-    color: #707070;
-    margin-top: 8px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 0 15px;
-}
-
-.input-box input:focus {
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-}
-
-.form .column {
-    display: flex;
-    column-gap: 15px;
-}
-
-.form .gender-box {
-    margin-top: 20px;
-}
-
-.gender-box h3 {
-    color: #333;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 8px;
-}
-
-.form :where(.gender-option, .gender) {
-    display: flex;
-    align-items: center;
-    column-gap: 50px;
-    flex-wrap: wrap;
-}
-
-.form .gender {
-    column-gap: 5px;
-}
-
-.gender input {
-    accent-color: rgb(130, 106, 251);
-}
-
-.form :where(.gender input, .gender label) {
-    cursor: pointer;
-}
-
-.gender label {
-    color: #707070;
-}
-
-.address :where(input, .select-box) {
-    margin-top: 15px;
-}
-
-.select-box select {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    color: #707070;
-    font-size: 1rem;
-}
-
-.form button {
-    height: 55px;
-    width: 100%;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    background: rgb(130, 106, 251);
-}
-
-.form button:hover {
-    background: rgb(88, 56, 250);
-}
-
-.form .pay {
-    height: 55px;
-    width: 100%;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 100px;
-    border: none;
-    cursor: pointer;
-    padding: 1rem;
-    transition: all 0.2s ease;
-    background:rgb(2, 2, 44);
-    text-decoration: none;
-}
-
-/*Responsive*/
-@media screen and (max-width: 500px) {
-    .form .column {
-        flex-wrap: wrap;
-    }
-
-    .form :where(.gender-option, .gender) {
-        row-gap: 15px;
-    }
-}
+          <div class="input-box">
+            <label>Topic</label>
+            <input type="text" placeholder="Enter Your Topic" id="topic" name="topic" required />
+          </div>
+          
+        </div>
+        <button>Submit</button>
+        <br>
+        <div>
+          <a class="pay"href="https://drive.google.com/file/d/1CW6MpzoK6HzhJqyOsIi3DQsorHmJiwiE/view?usp=sharing"><i class='bx bx-qr-scan'></i> Scan & Pay</a>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
